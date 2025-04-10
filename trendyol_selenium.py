@@ -23,15 +23,15 @@ time.sleep(2)
 driver.execute_script("window.scrollTo(0, 0);")
 #driver.execute_script("window.scrollTo(0, 0);")
 
-jobs_list=driver.find_elements(By.CLASS_NAME,"p-card-content-wrapper")
-job_titles = []
+uruns_list=driver.find_elements(By.CLASS_NAME,"p-card-content-wrapper")
+urun_titles = []
 
-for job in jobs_list:
-    job_titles.append(job.text)
+for urun in uruns_list:
+    urun_titles.append(urun.text)
 
 # İş ilanlarını dosyaya kaydet
 with open("urun.txt", "w", encoding="UTF-8") as file:
-    for job in job_titles:
-        file.write(job + "\n\n")
+    for urun in urun_titles:
+        file.write(urun + "\n\n")
 
 driver.quit()
