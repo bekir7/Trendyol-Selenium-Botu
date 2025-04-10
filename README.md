@@ -1,4 +1,4 @@
-# 🎬 Trendyol Ürün Çekme Botu
+#  Trendyol Ürün Çekme Botu
 
 Bu Python projesi, Selenium kullanarak Trendyol mağazasında erkek kategorisini açıp popüler ürünlere girip o ürünleri urun.txt dosyasına yazdırıyor.
 
